@@ -10,3 +10,11 @@ function computerPlay() {
 
 //call the computerPlay function
 computerPlay();
+
+//function that prompts the user to make a selection
+function userPlay() {
+    let playerSelection = prompt("Please choose one from the following: Rock, Paper, Scissors");
+    return playerSelection;
+}
+
+userPlay();
