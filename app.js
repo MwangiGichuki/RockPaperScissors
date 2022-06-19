@@ -2,7 +2,7 @@
 let playerScore = 0;
 let computerScore = 0;
 
-
+//array containing selections computer can chose from
 let selection = ['Rock', 'Paper', 'Scissors'];
 
 //function that allows the computer to select elements from the array
@@ -12,14 +12,6 @@ function computerPlay() {
     return computerSelection;
 }
 
-
-//function that prompts the user to make a selection
-
-/*function userPlay() {
-    let playerSelection = prompt("Please choose one from the following: Rock, Paper, Scissors");
-    return playerSelection;
-}*/
-
 //Create variables that specify who won
 let playerWin = "You win!";
 let computerWin = "Computer won!";
@@ -28,6 +20,7 @@ let draw = "Its a tie!";
 
 //Function that plays a single round of Rock Paper Scissors game that takes two inputs
 //playerSelection and computerSelection
+//increment player and computer scores
 
 function playRound(playerSelection, computerSelection) {
 
@@ -80,7 +73,7 @@ function game() {
     }
 
     console.log("Game over!");
-
+    //Check winner of game
     if (playerScore > computerScore) {
         alert("Congratulations! You win!")
     }
@@ -97,6 +90,5 @@ function game() {
     console.log(`Computer score: ${computerScore} , Player score: ${playerScore}`);
 
 }
-
 
 console.log(game());
